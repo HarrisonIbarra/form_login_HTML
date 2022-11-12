@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registro Nomina</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="icon" type="image/x-icon" href="logo raimbow six 1.jpeg">
+
+</head>
+<body>
+    <form class="formulario">
+        <h1>Registrarse</h1>
+        <div class="contenedor">
+            <div class="inputContenedor">
+                <i class="fas fa-user icon"></i> 
+                <label for="NombreCompleto">Nombre</label>
+                <input type="text" name="NombreCompleto"  id="NombreCompleto" autofocus placeholder="Nombre Completo" required pattern="[A-Za-z ]{3,40}"> 
+
+            </div>
+            <div class="tipoDocumento">
+                <label for="tipoDocumento">Tipo De Documento</label><br>
+            <select name="tipoDocumento" id="tipoDocumento">
+                
+                <option value="Cedula De Ciudadania">Cedula De Ciudadania</option>
+                <option value="Tarjeta De Identidad">Tarjeta De Identidad</option>
+                <option value="Cedula De Extranjeria">Cedula De Extranjeria</option>
+            </select>
+            </div><br>
+
+            <div class="inputContenedor">
+                <i class="fa fa-id-card icon"></i>
+                <label for="Documento">Numero De Documento</label>
+                <input type="text"  placeholder="Documento" required pattern="[0-9A-Za-z ]{3,20}">
+
+            </div>
+            <div class="inputContenedor">
+                <i class="fa fa-envelope icon"></i>
+                <label for="CorreoElectronico">Correo</label>
+                <input type="text"  placeholder="Correo Electronico" minlength="8" maxlength="50" required>
+
+            </div>         
+
+            <div class="inputContenedor">
+                <i class="fas fa-key icon"></i>
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" class="inputContenedor" id="password1" placeholder="Contraseña" minlength="8" maxlength="20" required>
+
+            </div>
+            <div class="inputContenedor">
+                <i class="fas fa-key icon"></i>
+                <label for="ConfirmaContraseña">Confirma Contraseña</label>
+                <input type="password" class="inputContenedor" id="password2" placeholder="Confirmar Contraseña" minlength="8" maxlength="20" required>
+
+            </div>
+            
+            <input type="submit" value="Crear Cuenta" class="button">
+            <p class="p1">Al registrarte, aceptas nuestras Condiciones de uso y Politica de privacidad</p> 
+            <p class="p2">¿Ya tienes cuenta? Iniciar Sesión</p>
+            
+        </div>
+       
+    </form>
+    
+</body>
+</html>
